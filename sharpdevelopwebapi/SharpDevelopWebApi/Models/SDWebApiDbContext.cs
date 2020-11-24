@@ -8,7 +8,7 @@ namespace SharpDevelopWebApi.Models
 {
     public class SDWebApiDbContext : DbContext
     {
-        public SDWebApiDbContext() : base("DefaultConn") // name_of_dbconnection_string
+        public SDWebApiDbContext() : base("DefaultConn2") // name_of_dbconnection_string
         {
         }
 
@@ -19,6 +19,11 @@ namespace SharpDevelopWebApi.Models
         public DbSet<Category> Categories { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Students> Student { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Faculty> Faculties { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<StudentGrade> StudentGrades { get; set; }
     }
 
 
